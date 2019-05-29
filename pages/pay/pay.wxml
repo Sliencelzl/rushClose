@@ -1,0 +1,87 @@
+<!--pay.wxml-->
+<view class='container'>
+  <view class='one one-first'>
+    <view class='people'>
+      <view class='img'><image class='imgone' src='/pages/images/payman.png'></image></view>
+      <view class='peopletext'><input class='inpname' type='text' name='username' value='{{ username }}' placeholder='姓名' bindblur='userNameInput'></input></view>
+    </view>
+
+    <view class='phone'>
+      <view class='peopletexttwo'><input class='inphone' type='text' name='phonenum' value='{{ phonenum }}' bindblur='userPhoneInput' placeholder='手机号'></input></view>
+      <view class='imgs'><image class='imgone' src='/pages/images/zhuanh.png'></image></view>
+    </view>
+  </view>
+
+
+  <view class='one'>
+    <view class='imgleft'><image class='imgtwo' src='/pages/images/payaddress.png'></image></view>
+    <view class='inpmap'><view class='inpa'>{{aname}}{{addressa}}</view></view>
+    <view class='imgright'><image  class='imgfour' bindtap='getMap' src='/pages/images/payaddress1.png'></image></view>
+  </view>
+
+
+
+
+  <view class='one'>
+    <view class='date'>
+      <view class='dateimg'><image class='imgthree' src='/pages/images/payclock.png'></image></view>
+       <picker mode="date" value="{{date}}" start="" end="2020-09-01" bindchange="bindDateChange" bindblur='userdate'> 
+        <view class="picker inpthree"> 
+          取衣日期：  {{date}} 
+        </view> 
+        </picker>
+    </view>
+    <view class='time'>
+         <picker mode="time" value="{{time}}" start="09:00" end="17:30" bindchange="changeTime" bindblur='usertime'>
+          <view class="tui-picker-detail inptwo">
+            取衣时间： {{time}} 
+          </view>
+        </picker>
+    </view>
+  </view>
+
+
+  <view class='one one-last'>
+    <view class='imgseven'><image class='imgsss' src='/pages/images/paymessage1.png'></image></view>
+    <view class='inpbe'>
+      <input class='inpafour' type='text' name='beizhu' placeholder='备注（选填)' value='{{ beizhu }}' bindblur='userbeizhu'></input>
+    </view>
+  </view>
+
+<view class='two'>
+  <view class='v-div'>衣物件数</view>
+  <view class='v-text'>{{ totalCount }}</view>
+</view>
+<view class='two'>
+  <view class='v-div'>商品金额</view>
+  <view class='v-text'>¥{{ totalCountPrice }}</view>
+</view>
+<view class='two'>
+    <view class='v-div'>优惠</view>
+  <view class='v-text'>¥123</view>
+</view>
+<view class='two'>
+  <view class='v-div'>配送费</view>
+  <view class='v-text'>¥123</view>
+  </view>
+<view class='two'>
+  <view class='v-div'></view>
+  <view class='v-text v-v-v-text'>合计：¥123</view>
+</view>
+
+  <!--<view class='top-three'>
+    <text class='txt1'>请选择您的支付方式：</text>
+    <view class='rd'>
+      <radio class='rd1'></radio><text class='money'>余额支付：</text><text class='money1'>(余额：0元)</text>
+      <radio class='rdtwo'></radio><text class='money'>微信支付</text>
+    </view>
+  </view>-->
+
+
+    <view class='bottom'>
+    <view class='pay'>
+      <text class='paytxtone'>应付：</text><text class='paytxtTwo'>¥1500</text>
+    </view>
+    <button class='btn' bindtap='jumporder'>立即下单</button>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+/**welcome.wxss**/
+page{
+    height: 100%;
+    background-color:#b3d4db;
+} 
+.myphoto{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -80rpx;
+}
+.motto{
+  font-size: 25px;
+  margin-top: -120px;
+}
+.button-text{
+  margin-top: -140px;
+  background-color:#b3d4db; 
+}

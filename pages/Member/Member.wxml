@@ -1,0 +1,71 @@
+<!--Member.wxml-->
+<view class='container'>
+    <view class='top'>
+        <view class='header'>
+           <open-data type="userAvatarUrl"></open-data>  <!--获取用户头像直接显示在小程序中-->
+        </view>
+        <view class='name'>
+          <open-data type="userNickName" lang="zh_CN"></open-data> <!--获取用户昵称直接显示在小程序中-->
+        </view>
+    </view>
+    <!--会员卡-->
+    <view class="member {{showView?'hide':'show'}}">
+        <view class='member-top'>
+          <view class='member-top-txt' bindtap='powerDrawer'  data-statu="open">点此激活会员</view>
+          
+        </view>
+        <view class='member-content'>
+          <image class='member-content-img' src='/pages/images/Mbg1.jpg'></image>
+          <view class='member-ceontet-date'>有效日期：0000-00-00</view>
+        </view>
+        <view class='member-bottom'></view>
+    </view>
+    <!--会员卡2-->
+    <view class="membertwo {{showView?'show':'hide'}}">
+        <view class='member-top'>
+          <view class='member-top-txt-next'>尊敬的会员，您好！</view>
+        </view>
+        <view class='member-content'>
+          <image class='member-content-img' src='/pages/images/Mbg.jpg'></image>
+          <view class='member-ceontet-date'>有效日期：2020-12-28</view>
+        </view>
+        <view class='member-bottom'></view>
+    </view>
+    <!--弹出框-->
+      <!--mask-->
+      <view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view> 
+      <!--content-->
+      <!--使用animation属性指定需要执行的动画-->
+      <view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}"> 
+  
+ <!--drawer content-->
+      <view class="drawer_title">会员绑定<image class='del' bindtap="powerDrawer" data-statu="close" src='/pages/images/del.png'></image></view> 
+
+      <view class="drawer_content">
+      <view class="top1 grid"> 
+      <label class="title col-0">用户姓名：</label> 
+      <input class="input_base input_h30 col-1" name="rName" placeholder='姓名' bindinput ="userNameInput"></input> 
+      </view> 
+
+      <view class="top1 grid"> 
+      <label class="title col-0">手机号码：</label> 
+      <input class="input_base input_h30 col-1" name="mobile" placeholder='手机号码' bindinput ="userPhoneInput"></input> 
+      </view> 
+
+      <view class="top1 grid"> 
+      <label class="title col-0">会员密码：</label> 
+      <input class="input_base input_h30 col-1" type='password' name="password" placeholder='会员卡支付密码(至少六位)' bindinput ="userPasswordInput"></input> 
+      </view> 
+      </view>
+
+      <view class="btn_ok" bindtap="sure" >确定</view> 
+      </view>
+
+    <!--服务框1-->
+      <view class="server {{showView?'hide':'show'}}">
+        <!--<view class='phone'>服务热线：<text class='numphone'>15274081279</text></view>-->
+        <!--<view class='time'>服务时间：<text class='numphone'>8:00-22：00</text></view>-->
+      </view>
+
+      <view class="serverone {{showView?'show':'hide'}}"></view>
+</view>

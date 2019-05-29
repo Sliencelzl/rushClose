@@ -1,0 +1,262 @@
+.container{
+  width: 100%;
+  height: 100%;
+  margin: 0rpx;
+  padding: 0rpx;
+}
+.one{
+  width: 100%;
+  height: 80rpx;
+  margin-top: 15rpx;
+  border-bottom: 1px solid #44bfe1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row
+}
+.one-first{
+  margin: 0rpx;
+  padding: 0rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row
+}
+.people{
+  height: 80rpx;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row
+}
+.phone{
+  height: 80rpx;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row
+}
+.peopletexttwo{
+  flex: 1;
+  height:80rpx;
+  width: 100%;
+  font-size: 25rpx;
+}
+.inphone{
+  width: 100%;
+  height: 80rpx;
+  font-size: 25rpx;
+}
+.imgs{
+  width: 50rpx;
+  height: 50rpx;
+  flex: .2;
+  margin-top: 15rpx;
+}
+.imgone{
+  width: 50rpx;
+  height: 50rpx;
+}
+.peopletext{
+  width: 120rpx;
+  height: 80rpx;
+}
+.img{
+  width: 50rpx;
+  height: 50rpx;
+  flex: .2;
+  margin-top: 15rpx;
+}
+.peopletext{
+  height: 80rpx;
+  flex: 1;
+}
+.inpname{
+  width: 100%;
+  height: 80rpx;
+  font-size: 25rpx;
+}
+.imgright{
+  height: 80rpx;
+  flex: .1
+}
+.inpmap{
+  width: 100%;
+  height: 80rpx;
+  flex: 1;
+}
+.imgtwo{
+  width: 50rpx;
+  height: 50rpx;
+  flex: .2;
+  margin-top: 15rpx;
+}
+.imgfour{
+  width: 50rpx;
+  height: 50rpx;
+  flex: .2;
+  margin-top: 15rpx;
+}
+.inpa{
+  font-size: 25rpx;
+}
+.date{
+  height: 80rpx;
+  flex: 1;
+}
+.dateimg{
+  width: 50rpx;
+  height: 80rpx;
+}
+.time{
+  height: 80rpx;
+  flex: 1;
+}
+.imgthree{
+  width: 50rpx;
+  height: 50rpx;
+  flex: .2;
+  margin-top: 15rpx;
+}
+.dateimg{
+  width: 50rpx;
+  height: 50rpx;
+  flex: .2;
+}
+.inpthree{
+  width: 85%;
+  height: 80rpx;
+  flex: 1;
+  position: absolute;
+  left: 70rpx;
+  top: 220rpx;
+  font-size: 25rpx;
+  color: rgba(20, 17, 17, 0.555)
+}
+.inptwo{
+  width: 85%;
+  height: 80rpx;
+  flex: 1;
+  position: absolute;
+  top: 220rpx;
+  font-size: 25rpx;
+  color: rgba(20, 17, 17, 0.555)
+}
+.imgseven{
+  height: 80rpx;
+  flex: .1;
+}
+.inpbe{
+  flex: 1;
+  height: 80rpx;
+}
+.imgsss{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 15rpx;
+}
+.inpafour{
+  font-size: 25rpx;
+  height: 80rpx;
+}
+.one-last{
+  border-bottom: 4px solid rgb(218, 217, 217)
+}
+.two{
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1px solid #44bfe1;
+  margin-top: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row
+}
+.v-div{
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  padding-left: 15rpx;
+  color: rgb(136, 135, 135)
+}
+.v-text{
+  flex: .1;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  padding-right: 15rpx;
+  color: rgb(247, 138, 49)
+}
+.v-v-v-text{
+  height: 80rpx;
+  flex: .4;
+  padding-left: 45rpx;
+  font-size: 35rpx;
+}
+.top-three{
+  width: 95%;
+  height: 120rpx;
+  margin-top: 20rpx;
+  box-shadow: 12rpx 12rpx 12rpx #eeeded;
+  border-radius: 14rpx;
+}
+.txt1{
+  font-size: 26rpx;
+  margin-left: 15rpx;
+}
+.rd{
+  width: 95%;
+  height: 50rpx;
+  position: relative;
+  left: 8rpx;
+  bottom: 0rpx;
+}
+.money{
+  font-size: 28rpx;
+}
+.money1{
+  font-size: 26rpx;
+}
+radio {
+  transform:scale(0.7);
+}
+.rdtwo{
+  margin-left: 15rpx;
+}
+.bottom{
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 97rpx;
+  background:  #b3d4db
+}
+.pay{
+  width: 200rpx;
+  height: 60rpx;
+  position: absolute;
+  left: 16rpx;
+  top: 16rpx;
+}
+.paytxtone{
+  font-size: 26rpx;
+  color: rgb(247, 138, 49)
+}
+.paytxtTwo{
+  font-size: 34rpx;
+  margin-top: 8rpx;
+  color: rgb(247, 138, 49)
+}
+.btn{
+  width: 200rpx;
+  height: 97rpx;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background: #f71520;
+  line-height: 97rpx;
+  font-size: 32rpx;
+  color: #ffff;
+}
+.table{
+  width: 100%;
+  height:100%
+}

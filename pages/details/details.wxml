@@ -1,0 +1,36 @@
+<!--details.wxml-->
+<view class='container'>
+  <view class='top'></view>
+
+  <view class='top-one'></view>
+
+  <view class='middle' wx:for="{{ clothsName }}" data-index="idx" wx:key="item.id">
+    <view class='middle-item'>{{ item.title }}</view>
+    <view class='middle-item price'>
+      <view class='priceone one'>价格：</view>
+      <view class='priceone two'>￥{{ item.price }}</view>
+    </view>
+    <view class='middle-item three'>
+      <view class='img' data-index="{{ index }}" bindtap='minusCount'>
+        <image class='jian' src='/pages/images/minus-circle.png'></image>
+      </view>
+      <view class='img num'>{{ item.num }}</view>
+      <view class='img' data-index="{{ index }}" bindtap='addcount'>
+        <image class='jian' src='/pages/images/plus-circle(1).png'></image>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='bottom'>
+    <view class='shopimg'>
+      <image class='shopimgone' src='/pages/images/shop.png'></image>
+    </view>
+
+    <view class='circle'>{{ totalCount }}</view>
+
+    <view class='money'>{{ totalCountPrice }}元</view>
+
+    <button class='btn' bindtap='select'>立即预约</button>
+  </view>
+</view>

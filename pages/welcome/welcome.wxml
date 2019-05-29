@@ -1,0 +1,8 @@
+<!--welcome.wxml-->
+<view class="container">
+  <image class="myphoto" src="/pages/images/Ajie.jpg"></image>
+  <text class="motto">澳洁DL洗衣生活馆</text>
+  <view class="button">
+    <button class="button-text" bindtap='jumpHome'>欢迎进入澳洁</button>
+  </view>
+</view>

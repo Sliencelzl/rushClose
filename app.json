@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/Home/Home",
+    "pages/Member/Member",
+    "pages/details/details",
+    "pages/pay/pay",
+    "pages/welcome/welcome",
+    "pages/order/order",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarTitleText": "澳洁DL洗衣生活馆",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8c8c8c",
+    "selectedColor": "#44bfe1",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/Home/Home",
+        "text": "首页",
+        "iconPath": "/pages/images/Home.png",
+        "selectedIconPath": "/pages/images/Home1.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "/pages/images/me.png",
+        "selectedIconPath": "/pages/images/me1.png"
+      },
+      {
+        "pagePath": "pages/Member/Member",
+        "text": "会员",
+        "iconPath": "/pages/images/Member.png",
+        "selectedIconPath": "/pages/images/Member1.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

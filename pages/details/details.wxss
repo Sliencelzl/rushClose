@@ -1,0 +1,127 @@
+.container{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0
+}
+.top{
+  width: 100%;
+  height: 200rpx;
+}
+.top-one{
+  width: 99%;
+  height: 14rpx;
+  margin-top: 14rpx;
+  background: #eeeded
+}
+.middle{
+  width: 95%;
+  height: 80rpx;
+  margin-top: 16rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 35rpx;
+  padding: 14rpx; 
+  box-shadow: 8rpx 8rpx 8rpx #eeeded;
+  border-radius: 14rpx;
+}
+.middle-item{
+  width: 120rpx;
+  height: 80rpx;
+  font-size: 32rpx;
+  flex-grow:1;
+  line-height: 80rpx;
+}
+.price{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.priceone{
+  width: 60rpx;
+  height: 80rpx;
+  flex-grow: 1;
+}
+.one{
+  padding-left: 15rpx;
+  color: #949393
+}
+.two{
+  color: #44bfe1;
+  text-align: left
+}
+.three{
+  width: 120rpx;
+  height: 80rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.img{
+  width: 40rpx;
+  height: 80rpx;
+  flex-grow: 1
+}
+.jian{
+  width: 80rpx;
+  height: 80rpx;
+}
+.num{
+  text-align: center
+}
+.bottom{
+  width: 100%;
+  height: 97rpx;
+  background:#c9e9f0;
+  position: fixed;
+  bottom: 0rpx;
+  left:0rpx; 
+  }
+.shopimg{
+  width: 97rpx;
+  height: 97rpx;
+}
+.shopimgone{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  left: 45rpx;
+  bottom: 12rpx;
+}
+.circle{
+  position: fixed;
+  left: 110rpx;
+  bottom: 42rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background: #76ddf1;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 25rpx;
+}
+.money{
+  width: 160rpx;
+  height: 40rpx;
+  position: relative;
+  left: 160rpx;
+  bottom: 66rpx;
+}
+.money{
+  font-size: 30rpx;
+  line-height: 40rpx;
+  color: #02c4eb
+}
+.btn{
+  width: 200rpx;
+  height: 97rpx;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background: #76ddf1;
+  line-height: 97rpx;
+  font-size: 32rpx;
+  color: #1f94ac;
+}

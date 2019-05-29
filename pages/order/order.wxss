@@ -1,0 +1,135 @@
+/**order.wxss**/
+.container{
+  width: 100%;
+  height: 100%;
+  margin: 0rpx;
+  padding: 0rpx;
+}
+
+.top{
+  width: 100%;
+  height: 80rpx;
+  background:#f4f7f7;
+  font-size: 35rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #44bfe1
+}
+/**radio-group{
+ width: 100%;
+ font-size: 28rpx;
+}
+.flex_box{
+ display: flex;
+ width: 100%;
+ background: #f4f7f7;
+}
+.flex_item{
+ flex: 1;
+ text-align: center;
+}
+.flex_item label{
+ padding: 22rpx 0;
+ display: inline-block;
+ width: 50%;
+}
+.flex_item label.active{
+ color: #55cece;
+ border-bottom: 1px solid #47f3f3;
+ 
+}**/
+
+.content{
+  width: 95%;
+  height: 100%;
+  margin-top: 14rpx;
+}
+.content-one{
+  width: 100%;
+  height: 330rpx;
+  box-shadow: 8rpx 8rpx 10rpx #dbdada;
+  border-radius: 14rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 30rpx;
+}
+.content-one-left{
+  width: 60rpx;
+  height: 330rpx;
+  border-top-left-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  background: #b5f3f3
+}
+.content-one-right{
+  width: 648rpx;
+  height: 300rpx;
+  float: left;
+}
+.content-one-right-text{
+  width: 640rpx;
+  height: 50rpx;
+  font-size: 24rpx;
+  margin-left: 10rpx;
+  color: #55cece;
+  margin-top: 8rpx;
+}
+.del{
+  width: 500rpx;
+  height:50rpx;
+}
+.imgdel{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 20rpx;
+}
+.img{
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+  top: 0px;
+  padding-top: 10rpx;
+}
+.txt{
+  font-size: 32rpx;
+  padding-left: 14rpx;
+  color: #289696;
+}
+.txtd{
+  margin-top: 80rpx;
+}
+.btnpay{
+  height: 60rpx;
+  width: 220rpx;
+  font-size: 23rpx;
+  line-height: 60rpx;
+  margin-top: -15rpx;
+  margin-right: 0rpx;
+}
+.btnpayone{
+  height: 60rpx;
+  width: 220rpx;
+  font-size: 23rpx;
+  line-height: 60rpx;
+  margin-top: -58rpx;
+  margin-right: 240rpx;
+}
+.middle{
+  width: 410rpx;
+  height: 360rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -150rpx;
+}
+.imgs{
+  width: 410rpx;
+  height: 290rpx;
+}
+.txts{
+  text-align: center;
+  font-size: 32rpx;
+  padding-left: 14rpx;
+  color: #289696;
+}
+/**6cc21e160dcade9e8e84d0d46d60dbb4**/

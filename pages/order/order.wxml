@@ -1,0 +1,44 @@
+<!--order.wxml-->
+<view class="container">
+  <view class='top'>
+    <text class='top_txt'>全部订单</text>
+  </view>
+
+  <!--选项卡的切换-->
+  <!--<radio-group bindchange="radioCheckedChange">
+  <view class="flex_box">
+   <view class="flex_item">
+      <label class="{{radioCheckVal==0?'active':''}}">全部订单<radio value="0" hidden="true"></radio></label>
+   </view>
+   <view class="flex_item">
+      <label class="{{radioCheckVal==1?'active':''}}">已完成<radio value="1" hidden="true"></radio></label>
+   </view>
+  </view>
+  </radio-group>-->
+
+  <view  class="content">
+      <view class='content-one' wx:for="{{ history }}" wx:key="{{ hsitory }}" bindtap='remove({{index}})'>
+        <view class='content-one-left'>
+          <image class='img' src='/pages/images/biaoqian.png'></image>
+          <text class='txt'>订</text>
+          <view class='txt txtd'>单</view>
+        </view>
+        <view class='content-one-right'>
+          <image class='imgdel' src='/pages/images/del.png'bindtap='clear'></image>
+          <view class='content-one-right-text del'>客户姓名：{{ item.username }}</view>
+          <view class='content-one-right-text'>手机号码：{{ item.userphone}}</view>
+          <view class='content-one-right-text'>支付金额：{{ item.totalCountPrice}}¥</view>
+          <view class='content-one-right-text'>客户地址：{{ item.addressa}}</view>
+          <view class='content-one-right-text'>备注：{{ item.userbeizhu}}</view>
+          <button class='btnpay' type="warn" >前往付款</button>
+          <button class='btnpayone' type="primary" bindtap='goBackHome'>再来一单</button>
+        </view>
+      </view>
+  </view>
+
+  <view class='middle' wx:if="{{ history.length == 0}}">
+    <image src='/pages/images/shop.gif' class='imgs'></image>
+    <view class='txts'>您还没有添加订单哦！</view>
+  </view>
+
+</view>

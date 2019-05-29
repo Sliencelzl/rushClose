@@ -1,0 +1,40 @@
+<!--welcome.wxml-->
+<!--https://tieba.baidu.com/p/5523564075?red_tag=0734098062&traceid=-->
+<view class='container'>
+  <!--图片轮播-->
+  <view class='img-top'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"circular="true">
+      <block wx:for="{{imgUrls}}" wx:key="imgUrls">
+        <swiper-item>
+            <image src="{{item.url}}" class="slide-image" mode='widthFix' height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+    <!--公告部分-->
+    <view class='top-one'>
+      <view class='left'>
+        <image class='imgTel' src='/pages/images/GG.png'></image><text class='txtone'>【公告】</text>
+      </view>
+      <view class='right'>
+          <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="6000" duration="{{duration}}"circular="true">
+      <block wx:for="{{typetext}}" wx:key="{{ item.id }}">
+        <swiper-item>
+           <text class='txt'>{{ item.title }}</text>
+        </swiper-item>
+      </block>
+    </swiper>
+      </view>
+    </view>
+    <!--服装展示部分-->
+    <scroll-view class='show' bindscrolltolower="loadMore" bindscrolltoupper="updateMore" scroll-y="true" style="height: 100%;">
+        <view class='img-list'>
+          <view class='container-three'wx:for="{{ typelist }}" wx:key="{{ item.id }}" data-index="{{ index }}" bindtap='jump'>
+            <image class='img' src="{{ item.src }}" mode="scaleToFill"></image>
+            <view class='text'>{{ item.title }}</view>
+          </view>
+        </view>
+    </scroll-view>
+</view>
+
+<!--有tabBar之后，无法跳转！在navigator里加open-type="switchTab"就可以了-->
